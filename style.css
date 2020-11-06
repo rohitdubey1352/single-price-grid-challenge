@@ -66,7 +66,7 @@ p {
   color: #fff;
   padding: 1rem;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 725;
   text-align: center;
   border-radius: .6rem;
   background-color: var(--bright-yellow-color);
@@ -79,7 +79,7 @@ p {
   margin-top: 20rem;
   height: 735px;
   overflow: hidden;
-  border-radius: 1.4rem;
+  border-radius: 1.2rem;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
@@ -90,8 +90,8 @@ p {
   padding: 35px 65px;
 }
 
-.first_div .second_div{
-	padding: 1rem;
+.first_div .second_div {
+    /* padding: 1rem; */
 }
 
 
@@ -111,10 +111,14 @@ p {
   color: var(--grayish-blue);
 }
 
-.second_div{
-  /*margin: 2rem -1rem;*/
-  margin-top: -0.8rem;
+.second_div .part1 .part2{
+  position: relative;
+  margin-top: 20rem;
+  /*margin-top: -0.8rem;*/
+  height: 100%;
 }
+
+
 
 .part1{
   background-color: var(--primary-cyan);
@@ -167,9 +171,45 @@ p {
 
 
 
+/*media_part*/
+
+
 @media (max-width: 1920px) {
   .first_div {
     margin: 40px 22px;
+  }
+  .first_div .second_div {
+     padding: 1rem; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .first_div {
+    height: 100%;
+  }
+
+  .second_div{
+  position: relative;
+  margin-bottom: -1rem;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
+
+  }  
+}
+
+@media (max-width: 900px) {
+  .first_div {
+    height: 100%;
+  }
+
+  .second_div{
+  position: relative;
+  margin-bottom: -1rem;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
+
   }
 }
 
@@ -183,13 +223,19 @@ p {
     height: 100%;
   }
 
+  .second_div{
+  position: relative;
+  margin-bottom: -1rem;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
+
+  }
+
 }
 
 
 /*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-
-}
 
 @media (max-width: 567px) {
     .header_content h1{
@@ -202,9 +248,7 @@ p {
     font-size: 1.2rem;
   }
   .first_div{
-    height: 1252px;
+    height: 100%;
   }
 }
-
-
 
