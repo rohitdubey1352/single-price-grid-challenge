@@ -252,7 +252,7 @@ p {
     height: 100%;
   }
   .part1 button{
-    width: 300px;
+    width: 100%;
     border: none;
     outline: none;
     color: #fff;
